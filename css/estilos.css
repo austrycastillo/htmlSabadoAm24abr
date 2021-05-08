@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(204, 180, 180);
+
+}
+a{
+    background-color: rgb(37, 116, 72);/*color de fondo*/
+    color: rgb(204, 180, 180);/*color de letra*/
+    text-decoration: none;/*quitar el subrayado*/
+    font-family: Arial, Helvetica, sans-serif;/*tipo de letra*/
+    font-size: 20px;/*tamaño de letra, medida base es 16px, em,rem*/
+    /*padding-top: 10px;crear un margen interno
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;*/
+    /*padding: 10px;*/
+    padding: 10px 15px;
+}
+a:hover{/*pseudoclase -> active, visited*/
+    background-color: #000;
+    color: rgb(37, 116, 72);
+}
+a:active{
+    background-color: red;
+}
+img{
+    width: 250px;/*ancho*/
+    height: 150px;/*altura*/
+}
