@@ -19,6 +19,61 @@
             <a href="contacto.html">contacto</a>
         </nav>
     </header>
+    <main>
+        <br><br>
+        <h2>Rellene el siguiente formulario:</h2>
+        <!--
+            get: envía a través de la url
+            post: envía oculta la info
+        -->
+        <form action="enviar.php" method="post" enctype="multipart/form-data">
+            <!--label: semántica para que el navegador interprete lo que estamos solicitando
+            input: elementos del formulario
+            id: conecta con el label
+            placeholder: texto de guía para el usuario-->
+            <label for="nombre">Escribe tu nombre:</label><br>
+            <input value="Fulano" type="text" id="nombre" placeholder="Ej. Juan" maxlength="5" required name="nombre" size="100" style="width:35%;height: 30px;"><br>
+
+            <label for="edad">Edad</label><br>
+            <input type="number" min="5" max="10" id="edad" name="edad" placeholder="min 5" required style="width:35%;height: 30px;"><br>
+
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" placeholder="ej. micorreo@web.com" maxlength="50" style="width:35%;height: 30px;"><br>
+
+            <label for="clave">Contraseña:</label><br>
+            <input type="password" id="clave" name="clave" style="width:35%;height: 30px;"><br>
+
+            Sexo:
+            <input type="radio" name="sexo" value="femenino" checked> femenino
+            <input type="radio" name="sexo" value="masculino"> masculino<br>
+            Materiales:
+            <input type="checkbox" name="hojas"> hojas
+            <input type="checkbox" name="lapicera" checked> lapicera
+            <input type="checkbox" name="borrador"> borrador
+            <input type="checkbox" name="marcadores"> marcadores
+            <input type="checkbox" name="colores"> colores<br>
+            Color:
+            <input type="color"><br>
+            Adjuntar CV:
+            <input type="file"><br>
+
+            <label for="horarios">Horarios disponibles</label>
+            <select name="horarios" id="horarios">
+                <option value="A">de 8 a 10 horas</option>
+                <option>de 10 a 14 horas </option>
+                <option>de 14 a 18 horas </option>
+                <option>de 18 a 22 horas </option>
+            </select><br>
+
+            Mensaje:<br>
+            <textarea name="mensaje" cols="30" rows="5" style="width:35%;height: 80px;">
+
+            </textarea>
+            <br><br>
+            <input type="submit" value="Enviar información de contacto" style="width:35%;height: 50px;background-color: rgb(29, 204, 43); text-transform: uppercase; font-weight: bold;">
+            <!-- <button>Enviar info</button> -->
+        </form>
+    </main>
 </body>
 
 </html>
